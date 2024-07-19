@@ -33,12 +33,12 @@ function Row(){
 }
 function Column(){
   return(
-
+<>
   <tr>
     <td>anjali</td>
     <td>Anjali</td>
   </tr>
-
+  </>
   );
 }
 export default App;
