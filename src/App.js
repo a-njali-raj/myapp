@@ -9,14 +9,36 @@ function App() {
     return "Good MOrning"
   }
   return (
-    <div className="App">
-     <h1 className="heading">Hello World</h1>
-     <h1>My name is {name}</h1>
-     <h2>Sum of 10 and 6 ={10+6}</h2>
-     <h2>Sum of x and y={x+y}</h2>
-     <h2>{message()}</h2>
-    </div>
+   <div>
+    <table>
+      <tbody>
+      <Row/>
+      <Column/>
+      </tbody>
+    </table>
+   </div>
+    
   );
 }
 
+function Row(){
+  return(
+
+  <tr>
+    <th>name</th>
+    <th>address</th>
+  </tr>
+
+  );
+}
+function Column(){
+  return(
+
+  <tr>
+    <td>anjali</td>
+    <td>Anjali</td>
+  </tr>
+
+  );
+}
 export default App;
