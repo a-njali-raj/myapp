@@ -1,44 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Home from'./components/Home';
 
 function App() {
-  const name='anjali';
-  const x=70;
-  const y=7;
-  const message=()=>{
-    return "Good MOrning"
-  }
-  return (
-   <div>
-    <table>
-      <tbody>
-      <Row/>
-      <Column/>
-      </tbody>
-    </table>
-   </div>
-    
-  );
-}
-
-function Row(){
-  return(
-
-  <tr>
-    <th>name</th>
-    <th>address</th>
-  </tr>
-
-  );
-}
-function Column(){
-  return(
-<>
-  <tr>
-    <td>anjali</td>
-    <td>Anjali</td>
-  </tr>
-  </>
-  );
+  return<div className='myapp'>
+<Header />
+<Header />
+<Home />
+<Home />
+<Home />
+  </div>
 }
 export default App;
