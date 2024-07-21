@@ -1,11 +1,11 @@
 import React from 'react'
-
+import './Header.css';
 const Header = () => {
-  const headingstyle={color:'blue'};
+
   return (
-    <div>
-        <h1 style={{color:'red'}}>component 1</h1>
-        <h1 style={headingstyle}>component</h1>
+    <div className='divheader'>
+        <h1 className='header'>component 1</h1>
+        <p className='para'>My name is Anjali</p>
     </div>
   );
 };
