@@ -1,35 +1,28 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import {Button, Table, Accordion, Card, Navbar, Nav, Container, NavDropdown  } from 'react-bootstrap';
 const Header = () => {
-  const clickHandle=()=>
-  {
-    console.log("you clicked me");
+  const[color,setcolor]=useState("Green");
+  const[count,setcount]=useState(0);
+  const changecolor=()=>{
+    setcolor('red');
   };
-  const DbClickHandle=(name)=>
-  {
-    alert("Hello" + name);
+  const increment=()=>{
+    setcount(count+1);
   };
-  const onChange=(name)=>
-    {
-      alert("you typed in textbox");
-    };
-    const onMouseOver=(name)=>
-      {
-        alert("you mouseover the elemnt");
-      };
-    const onKeyDown=()=>
-    {
-      alert("you pressed the key");
-    };
+ const decrement=()=>{
+  setcount(count-1);
+ };
+  
   return (
    <>
-   
-   <h1 className="bg-success text-white">Learn react events</h1>
-   <Button onClick={clickHandle}>Click Me</Button>
-   <h1 onDoubleClick={() => DbClickHandle("Anjali")}>Double click</h1>
-   <input onChange={onChange} type="text" />
-   <h1 onMouseOver={onMouseOver}>MouseOver</h1>
-   <input onKeyDown={onKeyDown} type="text"/>
+   <h1 className='bg-warning text-white'>Usestate Hook</h1>
+   <h2> My favourite color is {color}</h2>
+   <Button onClick={changecolor}> change color</Button>
+   <br/>
+   <br/>
+   <h1>Counter is {count}</h1>
+   <Button onClick={increment}className='m=2 bg-success'>+</Button>
+   <Button onClick={decrement}className='m=2 bg-danger'>-</Button>
    </>
   );
 };
