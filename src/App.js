@@ -3,10 +3,10 @@ import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
-  let num=1;
+  let isloggedin=false;
   return(
  <div className='myapp'>
-  {num>0?<h1>positive</h1>:num<0?<h1>negative</h1>:<h1>Zero</h1>};
+  {isloggedin?<h1>welcome to website</h1>:<h1>please login</h1>};
   </div>
 );
 }
