@@ -1,13 +1,17 @@
 import React from 'react'
 
-const States = (props) => {
+const States = ({states}) => {
   return (
-    <div className='bg-warning'>
-        <h1>{props.name}</h1>
-        <h4>{props.language}</h4>
-        <h4>{props.population}</h4>
+    <div>
+    {states.map((state)=>(
+      <div className='bg-warning'>
+      <h1>{state.name}</h1>
+      <h4>language:{state.language}</h4>
+      <h4>population:{state.population}</h4>
+  </div>
+    ))}
     </div>
-  )
-}
+  );
+};
 
 export default States
