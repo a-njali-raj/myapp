@@ -7,17 +7,21 @@ import States from './components/States';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
-  const states=[
-    {name:'kerala',language:'malayalam',population:2000},
-    {name:'tamilnadu',language:'tamil',population:3000},
-    {name:'karnataka',language:'kannada',population:4000},
-  ]
-  return<div className='myapp'>
-<Container>
-<States states={states}/>
-
-
-</Container>
+  const Checknum = ({ number })=>{
+    if(number>0){
+      return <h1>positive number</h1>;
+    }
+    else if(number<0){
+      return<h1>negative number</h1>;
+    }
+    else{
+      return<h1>Zero</h1>;
+    }
+  }
+  return(
+ <div className='myapp'>
+  <Checknum number={-5}/>
   </div>
+);
 }
 export default App;
