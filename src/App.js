@@ -2,12 +2,13 @@
 import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Main from './components/conditional/Main';
+
+import Keys from './components/keys/Keys';
 function App() {
   
   return(
  <div className='myapp'>
-  <Main isloggedin={false}/>
+ <Keys/>
   </div>
 );
 }
