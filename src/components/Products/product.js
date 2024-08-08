@@ -7,7 +7,7 @@ const Product = () => {
     const[items , setItems] = useState(phonesData);
     const decQty=(id)=>{
         const newItem=items.map((item)=>
-        item.id === id ? {...item, qty: item.qty - 1}:item);
+        item.id === id && item.qty >1 ? {...item, qty: item.qty - 1}:item);
         setItems(newItem);
     };
     const incQty=(id)=>{
