@@ -26,7 +26,7 @@ const Product = () => {
       <Card.Img  style={{ height: '15rem' }}
       className=' p-2'variant="top" src={require (`./assets/${item.image}.jpeg`)}/>
       <Card.Body>
-        <Card.Title>{item.model}</Card.Title>
+        <Card.Title className='text-primary'>{item.model}</Card.Title>
         <Card.Text>
           {item.desc}
         </Card.Text>
