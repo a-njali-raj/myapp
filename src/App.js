@@ -2,13 +2,15 @@
 import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Products from './components/Products/product';
+import { Container } from "react-bootstrap"
 
-import Keys from './components/keys/Keys';
 function App() {
   
   return(
  <div className='myapp'>
- <Keys/>
+  <Container><Products/></Container>
+ 
   </div>
 );
 }
