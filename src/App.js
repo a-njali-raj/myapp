@@ -2,15 +2,14 @@
 import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Products from './components/Products/product';
-import { Container } from "react-bootstrap"
+import Effects from './components/Effects/Effects';
 
 function App() {
   
   return(
  <div className='myapp'>
-  <Container><Products/></Container>
- 
+  
+ <Effects/>
   </div>
 );
 }
